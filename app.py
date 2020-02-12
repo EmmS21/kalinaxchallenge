@@ -7,8 +7,8 @@ from dash.dependencies import Input, Output
 import pandas as pd
 import os
 import numpy as np
-path = 'https://raw.githubusercontent.com/EmmS21/kalinaxchallenge/master/finaldataset2.csv?token=AKWUUXSY3KEGM2ZTLGYP5M26IRFPY'
-path_two = 'https://raw.githubusercontent.com/EmmS21/kalinaxchallenge/master/limitedsupervisor.csv?token=AKWUUXTFGNBDHKLP47HQURS6IRFLU'
+path = 'https://raw.githubusercontent.com/EmmS21/kalinaxchallenge/master/finaldataset2.csv'
+path_two = 'https://raw.githubusercontent.com/EmmS21/kalinaxchallenge/master/limitedsupervisor.csv'
 #reading the data
 performance_data = pd.read_csv(path)
 supervisor = pd.read_csv(path_two)
