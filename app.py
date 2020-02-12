@@ -158,7 +158,7 @@ app.layout = html.Div(children=[
         * Months of Employment Rounded - this is the rounded off delta between the hire date and the current report month. This does not factor in the Exit Date
         * Exit Date
         * Rental Charge
-        * Cost to Company - this is a calculation of what a given agent costs to the company, while factoring the expectations the company has from the individual in question. To get this figure I added the Base pay, car allowance and commission target. I made the assumption that including coomission target would allow me to factor in the expectations the company had from a given agent.
+        * Cost to Company - this is a calculation of what a given agent costs to the company, while factoring the expectations the company has from the individual in question. To get this figure I added the Base pay, car allowance and commission target. I made the assumption that including commission target would allow me to factor in the expectations the company had from a given agent.
         * Revenue Per CtC - this metric divides the rental charges by the cost to company. The purpose being to have a metric that measures the revenue a sales agent bring in per $ spent on the sales 's core salary while factoring in the expected output from the sales person.
     '''),
     dcc.Graph(
@@ -228,7 +228,7 @@ app.layout = html.Div(children=[
     dcc.Markdown('''
     ## Explanation
     
-    The purpose of creating a heatmap to visualize correlations was to specifically try and find out which features appear to be more correlated to higher mean team performance. Looking at this heatmap in conjunction with the visualizations created helps us understand if there is a relationship between a feature and the performance.
+    The purpose of creating a heatmap to visualize correlations was to specifically try and find out which features appear to be more associated with higher mean team performance. Looking at this heatmap in conjunction with the visualizations created helps us understand if there is a relationship between a feature and the performance.
     
     If we zoom in specifically on mean team performance we see the highest correlation between performance, Bajo Stress(S), Motivacion (D) and Características (D) scores. When we filter the relevant visualizations for these scores, leaving aside the outliers, we can see the existence of what appears to be a linear relationship between the supervisors scores and their team's performance.
     
