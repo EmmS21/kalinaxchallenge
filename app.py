@@ -123,6 +123,7 @@ corr_fig.update_layout(title="Correlation heatmap",
                   xaxis={"title": 'Traits',"tickangle": 45}, )
 #create the app
 app = dash.Dash()
+server = app.server
 #html layout
 app.layout = html.Div(children=[
     html.H1(children='SAC Challenge Level 2 Dashboard', style={
