@@ -22,8 +22,6 @@ correlation_df = supervisor[['Características (D)', 'Características (I)',
        'Motivación (I)', 'Motivación (S)', 'Motivación (C)', 'Bajo Stress (D)',
        'Bajo Stress (I)', 'Bajo Stress (S)', 'Bajo Stress (C)','span','Mean Team Performance','employment span','Pay to team size ratio']]
 correlation_df  = correlation_df.corr()
-#create the app
-app = dash.Dash()
 #supervisor data characteristics
 fig = go.Figure()
 category_dict = {'Características (D)': 'markers',
@@ -123,7 +121,8 @@ corr_fig.update_layout(title="Correlation heatmap",
                   width=1000,
                   height=700,
                   xaxis={"title": 'Traits',"tickangle": 45}, )
-
+#create the app
+app = dash.Dash()
 #html layout
 app.layout = html.Div(children=[
     html.H1(children='SAC Challenge Level 2 Dashboard', style={
