@@ -114,8 +114,7 @@ corr_fig.add_trace(go.Heatmap(
     y= ['Características (D)', 'Características (I)',
        'Características (S)', 'Características (C)', 'Motivación (D)',
        'Motivación (I)', 'Motivación (S)', 'Motivación (C)', 'Bajo Stress (D)',
-       'Bajo Stress (I)', 'Bajo Stress (S)', 'Bajo Stress (C)','span','Mean Team Performance','employment span','Pay to team size ratio'],
-    hoverongaps=False
+       'Bajo Stress (I)', 'Bajo Stress (S)', 'Bajo Stress (C)','span','Mean Team Performance','employment span','Pay to team size ratio']
 ))
 corr_fig.update_layout(title="Correlation heatmap",
                   yaxis={"title": 'Traits'},
